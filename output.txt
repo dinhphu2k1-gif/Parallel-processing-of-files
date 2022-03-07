@@ -1,0 +1,11 @@
+Top 10 tu xuat hien nhieu nhat: 
+to = 66
+of = 65
+the = 58
+is = 51
+and = 47
+a = 45
+in = 37
+system = 30
+be = 28
+can = 27

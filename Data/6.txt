@@ -1,0 +1,4 @@
+Caveats
+Note a program or a process are often used interchangeably but most of the times the intent is to refer to a process.
+
+There's also the concept of "multiprocessing" systems, where multiple processes get scheduled on more than one CPU. Usually, this requires hardware support where a single system comes with multiple cores or the execution takes place in a cluster of machines. Processes don't share any resources amongst themselves whereas threads of a process can share the resources allocated to that particular process, including memory address space. However, languages do provide facilities to enable inter-process communication.

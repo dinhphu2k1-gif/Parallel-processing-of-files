@@ -1,0 +1,1 @@
+We've done the inverse to our previous example, by providing a predicate for determining elements to include, not exclude. The advantage is that we can chain together other functions alongside the removal. In the example, we use a functional map(), but could use even more operations if we want to.

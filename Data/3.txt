@@ -1,0 +1,8 @@
+Benefits of Threads#
+Higher throughput, though in some pathetic scenarios it is possible to have the overhead of context switching among threads steal away any throughput gains and result in worse performance than a single-threaded scenario. However such cases are unlikely and an exception, rather than the norm.
+
+Responsive applications that give the illusion of multi-tasking.
+
+Efficient utilization of resources. Note that thread creation is light-weight in comparison to spawning a brand new process. Web servers that use threads instead of creating new processes when fielding web requests, consume far fewer resources.
+
+All other benefits of multi-threading are extensions of or indirect benefits of the above.
