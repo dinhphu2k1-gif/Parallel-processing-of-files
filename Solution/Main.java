@@ -69,22 +69,11 @@ public class Main {
         for (Future<HashMap<String, Integer>> f : list) {
             try {
                 HashMap<String, Integer> tmp = f.get();
-                // System.out.println(tmp);
-                // tmp.forEach((key, value) -> {
-                // if (wordCounts.containsKey(key)){
-                // wordCounts.compute(key.toLowerCase(), (k, v) -> v + value);
-                // }
-                // else {
-                // wordCounts.put(key.toLowerCase(), value);
-                // }
-                // });
                 tmp.forEach((key, value) -> wordCounts.merge(key, value, (v1, v2) -> v1 + v2));
 
             } catch (InterruptedException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             } catch (ExecutionException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }
@@ -98,17 +87,15 @@ public class Main {
                     String t = k + " = " + v;
                     writer.write(t + "\n");
                 } catch (IOException e) {
-                    // TODO Auto-generated catch block
                     e.printStackTrace();
                 }
             });
         }
         catch(IOException e){
-            // Handle the exception
+            e.printStackTrace();
         }
 
         System.out.println("OK!!!");
-
     }
 
 }

@@ -44,6 +44,7 @@ public class Worker implements Callable<HashMap<String, Integer>> {
             while ((c = bufferedReader.readLine()) != null) {
                 text = text + c;
             }
+        
         } finally {
             if (bufferedReader != null) {
                 bufferedReader.close();
